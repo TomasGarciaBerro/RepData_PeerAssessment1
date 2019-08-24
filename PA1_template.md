@@ -94,8 +94,8 @@ meanInterval <- meanInterval[,c("interval","mean")]
 plot(meanInterval,type = "l",lwd = 2,xlab = "Interval", ylab = "Average Steps Taken",main = "Average Steps Taken by Interval")
 ```
 
-![](PA1_template_files/figure-html/1 Plot-1.png)<!-- -->
-
+![alt text](https://github.com/TomasGarciaBerro/RepData_PeerAssessment1/blob/master/PA1_template_files/figure-html/1%20Plot-1.png)
+  
 ### 5. Interval with Maximum Mean (Original Dataset)
 
 
@@ -154,10 +154,9 @@ data.frame(Mean = mean(stepCount_imputed),Median = median(stepCount_imputed))
 hist(stepCount_imputed,xlab = "Total Number of Steps Taken per Day", col = "blue",main = "Histogram of Steps Taken per Day", breaks = 15)
 ```
 
-![](PA1_template_files/figure-html/2 Histogram-1.png)<!-- -->
+![alt text](https://github.com/TomasGarciaBerro/RepData_PeerAssessment1/blob/master/PA1_template_files/figure-html/2%20Histogram-1.png)
 
 ### 8. Average Steps Taken per Interval Clasified by Day Type (Imputed Dataset)
-
 
 ```r
 dt_imputed$day_type <- factor(ifelse(is.weekend(dt_imputed$date),"weekend","weekday"),levels = c("weekday","weekend"))
@@ -179,4 +178,4 @@ day_type_plot("weekday")
 day_type_plot("weekend")
 ```
 
-![](PA1_template_files/figure-html/2 Plot-1.png)<!-- -->
+![alt text](https://github.com/TomasGarciaBerro/RepData_PeerAssessment1/blob/master/PA1_template_files/figure-html/2%20Plot-1.png)
