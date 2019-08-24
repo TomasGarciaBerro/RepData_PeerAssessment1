@@ -67,7 +67,7 @@ stepCount <- stepCount[!bad]
 hist(stepCount,xlab = "Total Number of Steps Taken per Day", col = "blue",main = "Histogram of Steps Taken per Day",breaks = 15)
 ```
 
-![](PA1_template_files/figure-html/1 Histogram-1.png)<!-- -->
+![alt text](https://github.com/TomasGarciaBerro/RepData_PeerAssessment1/blob/master/PA1_template_files/figure-html/1%20Histogram-1.png)
 
 ### 3. Mean and Median of Steps Taken per Day (Original Dataset)
 
